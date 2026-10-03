@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore Properties – HomeNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+ <div class="container">
+  <nav>
+   <a href="index.html" class="logo">Home<span>Nest</span></a>
+   <ul class="menu" id="menu">
+    <li><a href="index.html" data-p="home">Home</a></li>
+    <li><a href="properties.html" data-p="properties" class="active">Properties</a></li>
+    <li><a href="about.html" data-p="about">About</a></li>
+    <li><a href="contact.html" data-p="contact">Contact</a></li>
+   </ul>
+   <div class="right">
+    <button class="btn" onclick="openLogin()">Login</button>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<main>
+ <div class="pagehead"><h1>Explore Properties</h1></div>
+ <div class="container">
+  <div class="filters">
+   <select id="p-loc"><option value="">Location</option></select>
+   <select id="p-type"><option value="">Property Type</option></select>
+   <select id="p-price"><option value="">Price</option></select>
+   <button class="btn" onclick="searchProps()">Search</button>
+  </div>
+  <div class="grid" id="prop-grid"></div>
+ </div>
+</main>
+
+<footer><div class="container">© 2026 HomeNest. Demo website – all data is for display only.</div></footer>
+
+<!-- Modal -->
+<div class="modal" id="modal"><div class="mbox" id="mbox"></div></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

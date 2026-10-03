@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HomeNest – Find Your Dream Home</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+ <div class="container">
+  <nav>
+   <a href="index.html" class="logo">Home<span>Nest</span></a>
+   <ul class="menu" id="menu">
+    <li><a href="index.html" data-p="home" class="active">Home</a></li>
+    <li><a href="properties.html" data-p="properties">Properties</a></li>
+    <li><a href="about.html" data-p="about">About</a></li>
+    <li><a href="contact.html" data-p="contact">Contact</a></li>
+   </ul>
+   <div class="right">
+    <button class="btn" onclick="openLogin()">Login</button>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<main>
+ <div class="hero">
+  <div class="container">
+   <h1>Find Your Dream Home</h1>
+   <p>Discover beautiful homes and properties at the right price.</p>
+   <div class="btns">
+    <a href="properties.html" class="btn">Explore Properties</a>
+    <a href="contact.html" class="btn out">Contact Us</a>
+   </div>
+   <div class="search">
+    <select id="h-loc"><option value="">Location</option></select>
+    <select id="h-type"><option value="">Property Type</option></select>
+    <select id="h-price"><option value="">Price Range</option></select>
+    <button class="btn" onclick="searchHome()">Search</button>
+   </div>
+  </div>
+ </div>
+ <section class="block">
+  <div class="container">
+   <h2 class="title">Featured Properties</h2>
+   <p class="sub">Handpicked homes in popular cities</p>
+   <div class="grid" id="home-grid"></div>
+  </div>
+ </section>
+</main>
+
+<footer><div class="container">© 2026 HomeNest. Demo website – all data is for display only.</div></footer>
+
+<!-- Modal -->
+<div class="modal" id="modal"><div class="mbox" id="mbox"></div></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

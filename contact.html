@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – HomeNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+ <div class="container">
+  <nav>
+   <a href="index.html" class="logo">Home<span>Nest</span></a>
+   <ul class="menu" id="menu">
+    <li><a href="index.html" data-p="home">Home</a></li>
+    <li><a href="properties.html" data-p="properties">Properties</a></li>
+    <li><a href="about.html" data-p="about">About</a></li>
+    <li><a href="contact.html" data-p="contact" class="active">Contact</a></li>
+   </ul>
+   <div class="right">
+    <button class="btn" onclick="openLogin()">Login</button>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<main>
+ <div class="pagehead"><h1>Contact Us</h1></div>
+ <section class="block">
+  <div class="container">
+   <p class="cinfo">📍 Pune, Maharashtra &nbsp;|&nbsp; 📞 +91 98765 43210 &nbsp;|&nbsp; ✉️ hello@homenest.demo</p>
+   <div class="cform">
+    <input id="c-name" placeholder="Your Name">
+    <input id="c-email" type="email" placeholder="Your Email">
+    <textarea id="c-msg" rows="5" placeholder="Your Message"></textarea>
+    <button class="btn" onclick="sendMsg()">Send Message</button>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer><div class="container">© 2026 HomeNest. Demo website – all data is for display only.</div></footer>
+
+<!-- Modal -->
+<div class="modal" id="modal"><div class="mbox" id="mbox"></div></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

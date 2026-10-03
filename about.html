@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About HomeNest</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+ <div class="container">
+  <nav>
+   <a href="index.html" class="logo">Home<span>Nest</span></a>
+   <ul class="menu" id="menu">
+    <li><a href="index.html" data-p="home">Home</a></li>
+    <li><a href="properties.html" data-p="properties">Properties</a></li>
+    <li><a href="about.html" data-p="about" class="active">About</a></li>
+    <li><a href="contact.html" data-p="contact">Contact</a></li>
+   </ul>
+   <div class="right">
+    <button class="btn" onclick="openLogin()">Login</button>
+    <button class="burger" id="burger" aria-label="Menu">☰</button>
+   </div>
+  </nav>
+ </div>
+</header>
+
+<main>
+ <div class="pagehead"><h1>About HomeNest</h1></div>
+ <section class="block">
+  <div class="container">
+   <p class="about">HomeNest is a simple real estate platform that helps users discover beautiful properties and find a home that matches their needs.</p>
+   <div class="stats">
+    <div class="stat"><b>500+</b>Properties Listed</div>
+    <div class="stat"><b>300+</b>Happy Clients</div>
+    <div class="stat"><b>5+</b>Cities Covered</div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer><div class="container">© 2026 HomeNest. Demo website – all data is for display only.</div></footer>
+
+<!-- Modal -->
+<div class="modal" id="modal"><div class="mbox" id="mbox"></div></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
